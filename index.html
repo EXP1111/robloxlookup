@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox User Info</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1>Roblox User Info</h1>
+        <p>Search by username or user id to pull public profile details.</p>
+      </header>
+
+      <section class="search">
+        <input id="query" type="text" placeholder="Username or user id" />
+        <button id="searchButton">Get info</button>
+      </section>
+
+      <section id="results" class="results hidden"></section>
+      <section id="error" class="error hidden"></section>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
