@@ -62,7 +62,7 @@ async def get_user(query: str):
     badges = _get_json(f"{ROBLOX_BADGES_API}/users/{user_id}/badges?limit=100&sortOrder=Asc")
 
     thumbnails = _get_json(
-        f"{ROBLOX_THUMBNAILS_API}/v1/users/avatar-headshot?userIds={user_id}&size=150x150&format=Png&isCircular=false"
+        f"{ROBLOX_THUMBNAILS_API}/users/avatar-headshot?userIds={user_id}&size=150x150&format=Png&isCircular=false"
     )
     avatar_url = None
     if thumbnails.get("data"):
